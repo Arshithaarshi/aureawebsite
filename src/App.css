@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+.products div {
+  transition: 0.3s;
+}
+
+.products div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
